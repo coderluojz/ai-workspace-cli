@@ -1,0 +1,39 @@
+{
+  "name": "@luojz/ai-workspace-cli",
+  "version": "1.0.0",
+  "description": "AI Workspace rules and skills sync tool",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderluojz/ai-workspace-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/coderluojz/ai-workspace-cli/issues"
+  },
+  "homepage": "https://github.com/coderluojz/ai-workspace-cli#readme",
+  "type": "module",
+  "main": "./dist/cli.js",
+  "bin": {
+    "ai-workspace": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "rules",
+    "skills"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "fs-extra": "^11.2.0",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.11.24",
+    "@types/prompts": "^2.4.9",
+    "tsup": "^8.0.2",
+    "typescript": "^5.3.3"
+  }
+}
